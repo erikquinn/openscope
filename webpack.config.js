@@ -51,6 +51,11 @@ module.exports = {
       {
         test: /\.(png|jpg)$/,
         loader: 'url-loader?limit=8192'
+      },
+      {
+        test: /\.js$/,
+        loader: 'babel',
+        query: {presets:['es2015']}
       }
     ]
   },
